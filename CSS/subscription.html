@@ -1,0 +1,125 @@
+<!-- 
+Created a subscription page to understand the use of:
+1. Basic HTML structure and tags.
+2. CSS styling, including background colors, borders, padding, and text alignment.
+3. Flexbox properties such as justify-content, align-items, flex-direction, and gap for layout.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subscription</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .outer {
+            margin-top: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .title-bar {
+            width: 800px;
+            text-align: center;
+            height: 40px;
+            padding: 10px;
+            background-color: palevioletred;
+        }
+
+        .inner {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 25px;
+            margin-top: 60px;
+        }
+
+        .container {
+            width: 180px;
+            height: 260px;
+            border-radius: 20px;
+            background-color: black;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+
+        .container__s1, .container__s2 {
+            margin-bottom: 6px;
+        }
+
+        .container__card {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            border: solid white 2px;
+            padding: 10px;
+            border-radius: 10px;
+            text-align: left;
+            margin-top: 10px;
+        }
+
+        .container__card p {
+            margin-bottom: 5px;
+        }
+
+        .container__card img {
+            margin-right: 5px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="outer">
+        <div class="title-bar">
+            <h1>Choose your Subscription Today</h1>
+        </div>
+    </div>
+    <div class="inner">
+        <div class="container">
+            <h1 class="container__s1">0/-</h1>
+            <h2 class="container__s2">Free</h2>
+            <div class="container__card">
+                <p><img src="./image/checked.png" alt="check">Listen To Music</p>
+                <p><img src="./image/checked.png" alt="check">Share Links</p>
+                <p><img src="./image/checked.png" alt="check">Create a Playlist</p>
+                <p><img src="./image/delete-button.png" alt="delete">Ad Free Music</p>
+                <p><img src="./image/delete-button.png" alt="delete">Download Music</p>
+                <p><img src="./image/delete-button.png" alt="delete">Upload your Music</p>
+            </div>
+        </div>
+        <div class="container">
+            <h1 class="container__s1">499/-</h1>
+            <h2 class="container__s2">Standard</h2>
+            <div class="container__card">
+                <p><img src="./image/checked.png" alt="check">Listen To Music</p>
+                <p><img src="./image/checked.png" alt="check">Share Links</p>
+                <p><img src="./image/checked.png" alt="check">Create a Playlist</p>
+                <p><img src="./image/checked.png" alt="check">Ad Free Music</p>
+                <p><img src="./image/delete-button.png" alt="delete">Download Music</p>
+                <p><img src="./image/delete-button.png" alt="delete">Upload your Music</p>
+            </div>
+        </div>
+        <div class="container">
+            <h1 class="container__s1">699/-</h1>
+            <h2 class="container__s2">Premium</h2>
+            <div class="container__card">
+                <p><img src="./image/checked.png" alt="check">Listen To Music</p>
+                <p><img src="./image/checked.png" alt="check">Share Links</p>
+                <p><img src="./image/checked.png" alt="check">Create a Playlist</p>
+                <p><img src="./image/checked.png" alt="check">Ad Free Music</p>
+                <p><img src="./image/checked.png" alt="check">Download Music</p>
+                <p><img src="./image/checked.png" alt="check">Upload your Music</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+
