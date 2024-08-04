@@ -1,0 +1,97 @@
+<!-- 
+Created an Anime gallery webpage to understand the use of:
+1. Basic HTML structure and tags.
+2. CSS styling, including background colors, borders, padding, and box shadows.
+3. Inline and block-level elements, flexbox properties such as justify-content, align-items, and flex-wrap.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: white;
+            border: solid black 15px;
+            padding: 10px;
+        }
+
+        .head {
+            display: inline;
+            text-align: left;
+            padding: 8px;
+            color: white;
+            background-color: black;
+            border-radius: 30px;
+        }
+
+        .title {
+            color: black;
+            text-align: center;
+            font-size: 35px;
+        }
+
+        .parent {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 20px;
+            margin-top: 5px;
+        }
+
+        .line {
+            width: 350px;
+            height: 8px;
+            background-color: black;
+            border-radius: 10px;
+        }
+
+        .pic {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .pic img {
+            width: 400px;
+            height: 185px;
+            border-radius: 25px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header for the gallery -->
+    <h1 class="head">Anime</h1>
+    <!-- Title for the gallery -->
+    <h1 class="title">Naruto - Shippuden</h1>
+    <!-- Horizontal line under the title -->
+    <div class="parent">
+        <div class="line"></div>
+    </div>
+    <!-- Image gallery with flexbox layout -->
+    <div class="pic">
+        <img src="./images/Naruto.webp" alt="Naruto">
+        <img src="./images/Sasuke.webp" alt="Sasuke">
+        <img src="./images/sakura.jpeg" alt="sakura">
+        <img src="./images/hinata.jpeg" alt="hinata">
+        <img src="./images/kakashi.jpeg" alt="kakashi">
+        <img src="./images/itachi.jpg" alt="itachi">
+        <img src="./images/minato.avif" alt="minato">
+        <img src="./images/jiraya.webp" alt="jiraya">
+        <img src="./images/pain.jpeg" alt="pain">
+    </div>
+</body>
+
+</html>
