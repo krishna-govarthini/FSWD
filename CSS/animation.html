@@ -1,0 +1,157 @@
+<!-- Practiced these tasks to understand CSS animations and tarnsition properties -->
+
+<!-- Exercise 1 -->
+<style>
+    .box{
+        width: 150px;
+        height: 150px;
+        background-color: red;
+        animation-name: move;
+        animation-duration: 10s;
+    }
+
+    @keyframes move {
+        0%{
+            margin-left: 0px;
+        }
+        25%{
+            margin-bottom: 250px;
+        }
+        50%{
+            margin-right: 250px;
+        }
+        75%{
+            margin-top: 250px;
+        }
+        100%{
+            margin-left: 250px;
+        }
+    }
+</style>
+<div class="box"></div>
+
+<!-- Exercise 2 -->
+<style>
+    div{
+        background-color: black;
+        width: 100px;
+        height: 100px;
+        animation-name: movebox;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+    }
+
+    @keyframes movebox{
+        0%{
+            margin-left: 0px;
+            margin-top: 0px;
+        }
+        25%{
+            margin-left: 0px;
+            margin-top: 100px;
+        }
+        50%{
+            margin-left: 100px;
+            margin-top: 100px;
+        }
+        75%{
+            margin-left: 100px;
+            margin-top: 0px;
+        }
+        100%{
+            margin-left: 0px;
+            margin-top: 0px;
+        }
+    }
+</style>
+<div></div>
+
+<!-- Exercise 3 -->
+<style>
+    div{
+        background-color: black;
+        width: 100px;
+        height: 100px;
+        animation-name: movebox;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+    }
+
+    @keyframes movebox{
+        0%{
+            transform: scale(1);
+        }
+        100%{
+            transform: scale(0);
+        }
+    }
+</style>
+<div></div>
+
+<!-- Exercise 4 -->
+<style>
+    button{
+        color: white;
+        padding: 15px;
+        border: none;
+        margin-top: 150px;
+        margin-left: 150px;
+        border-radius: 15px;
+        background-color: black;
+        animation-name: bouce;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+    }
+
+    @keyframes bouce{
+        0%{
+            transform: translateY(0);
+        }
+        50%{
+            transform: translateY(-3px);
+        }
+        100%{
+            transform: translateY(0);
+        }
+    }
+</style>
+<button>Submit</button>
+
+<!-- Exercise 5 -->
+<style>
+    .card {
+        background-color: black;
+        color: white;
+        padding: 20px;
+        width: 225px;
+    }
+    .image{
+        width: 100%;
+    }
+    .click{
+        background-color: transparent;
+        border: solid crimson 2px;
+        color: white;
+        padding: 3px;
+    }
+
+    .click:hover{
+        background-color: beige;
+        color: black;   
+    }
+
+    .card:hover{
+        transform: rotateY(180deg);
+        transition: 5s;
+        cursor: pointer;
+    }
+</style>
+<div class="card">
+    <img class="image" src="githubprofile.jpg" alt="Girl">
+    <h2>Ooty: Queen Of Hills</h2>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, laboriosam? Corporis et alias sunt debitis
+        iste assumenda a, quas aliquid, accusantium omnis esse saepe quaerat natus. Maiores est perferendis inventore!
+    </p>
+    <button class="click">Checkout</button>
+</div>
