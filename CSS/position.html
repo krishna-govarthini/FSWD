@@ -1,0 +1,105 @@
+<!-- Various tasks practiced for a better understanding of CSS positioning techniques -->
+
+<!-- Exercise One -->
+<style>
+    .outer{
+        background-color: black;
+        width: 500px;
+    }
+    
+    .inner{
+        background-color: palevioletred;
+        padding: 15px;
+        position: relative;
+        top: 20px;
+        left: 20px;
+    }
+</style>
+
+<div class="outer">
+    <div class="inner">
+        <h1>Krishna Govarthini</h1>
+        <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus consectetur quos ut aliquid maiores, quisquam ea cumque repellat. Harum quisquam iure inventore maiores placeat labore praesentium magni iste, voluptatibus quis ducimus nihil molestias libero qui dolorem repellendus optio commodi. Repudiandae facilis dolor fugiat. Quasi id nulla iste quis dolorem voluptatem?
+        </p>
+    </div>
+</div>   
+
+<!-- Exercise Two -->
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+
+    div{
+        border: solid black 2px;
+        width: fit-content;
+        position: relative;
+    }
+
+    img{
+        width: 100px;
+    }
+
+    h3{
+        padding: 10px;
+        border-radius: 50px;
+        background-color: red;
+        border: none;
+        width: fit-content;
+        position: absolute;
+        top: 0;
+        right: 10px;
+    }
+</style>
+
+<div>
+    <img src="bell.png" alt="bell">
+    <h3>34</h3>
+</div> 
+
+<!-- Exercise Three -->
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    .box{
+        margin-left: 500px;
+        background-color: palegreen;
+        width: 350px;
+        height: 350px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        margin-top: 100px;
+    }
+    
+    .left{
+        width: 50px;
+        position: absolute;
+        left: -15px;
+    }
+
+    .right{
+        width: 50px;
+        position: absolute;
+        right: -15px;
+    }
+
+    .dots{
+        position: absolute;
+        width: 75px;
+        bottom: -25px;
+    }
+
+</style>
+
+<div class="box">
+    <h1>1</h1>
+    <img class="left" src="./left-arrow.png" alt="left">
+    <img class="right" src="./right-arrow.png" alt="right">
+    <img class="dots" src="./more.png" alt="dots">
+</div>
